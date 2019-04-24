@@ -1,0 +1,238 @@
+#define pin 8
+int x;
+void setup() {
+  pinMode(13,OUTPUT);
+  Serial.begin(9600);
+
+}
+void aa(int a,int b,int c)
+{
+      tone(a,b,c);
+      delay(c); 
+      noTone(a);
+
+}
+void loop() {
+  if(Serial.available())
+  {
+    x=Serial.read();
+    Serial.println(x);
+    if(x=='A')
+    {
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+    }
+    else if(x=='B')
+    {
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+    }
+    else if(x=='C')
+    {
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+    }
+    else if(x=='D')
+    {
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+    }
+    else if(x=='E')
+    {
+      aa(pin,440,100);
+    }
+    else if(x=='F')
+    {
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+    }
+    else if(x=='G')
+    {
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+    }
+    else if(x=='H')
+    {
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+    }
+    else if(x=='I')
+    {
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+    }
+    else if(x=='J')
+    {
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,300);
+    }
+    else if(x=='K')
+    {
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+    }
+    else if(x=='L')
+    {
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+    }
+    else if(x=='M')
+    {
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,300);
+    }
+    else if(x=='N')
+    {
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+    }
+    else if(x=='O')
+    {
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+    }
+    else if(x=='P')
+    {
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+    }
+    else if(x=='Q')
+    {
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+    }
+    else if(x=='R')
+    {
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+    }
+    else if(x=='S')
+    {
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+    }
+    else if(x=='T')
+    {
+      aa(pin,440,300);
+    }
+    else if(x=='U')
+    {
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+    }
+    else if(x=='V')
+    {
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+    }
+    else if(x=='W')
+    {
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,300);
+    }
+    else if(x=='X')
+    {
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+    }
+    else if(x=='Y')
+    {
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,300);
+    }
+    else if(x=='Z')
+    {
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,300);
+      delay(100);
+      aa(pin,440,100);
+      delay(100);
+      aa(pin,440,100);
+    }
+  }
+
+}
